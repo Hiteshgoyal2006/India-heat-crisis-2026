@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | India's Heat Crisis 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ══ READING PROGRESS BAR ══ -->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- ══ BREAKING NEWS TICKER ══ -->
+<div class="ticker">
+  <span class="ticker-label">🔴 BREAKING</span>
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <span>🌡️ 98 of 100 hottest cities globally are in India — April 2026</span>
+      <span>☀️ Temperatures at 44°C–46°C across UP, Maharashtra, Bihar &amp; Odisha</span>
+      <span>⚡ Power grids at record demand — blackout risk during peak hours</span>
+      <span>🔴 Red Alert: Stay indoors between 12pm – 4pm</span>
+      <span>🌆 Nighttime temps above 30°C preventing natural cooling</span>
+      <span>🏥 Sharp rise in heat-related illnesses across affected states</span>
+      <!-- duplicate for seamless loop -->
+      <span>🌡️ 98 of 100 hottest cities globally are in India — April 2026</span>
+      <span>☀️ Temperatures at 44°C–46°C across UP, Maharashtra, Bihar &amp; Odisha</span>
+      <span>⚡ Power grids at record demand — blackout risk during peak hours</span>
+      <span>🔴 Red Alert: Stay indoors between 12pm – 4pm</span>
+      <span>🌆 Nighttime temps above 30°C preventing natural cooling</span>
+      <span>🏥 Sharp rise in heat-related illnesses across affected states</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══ NAVBAR ══ -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Heat<span>Crisis</span></a>
+
+    <!-- SDG Badge -->
+    <div class="sdg-nav-badge" title="This project addresses UN SDGs 4, 11 and 13">
+      <span class="sdg-chip" style="background:var(--sdg4)"  title="SDG 4 — Quality Education">4</span>
+      <span class="sdg-chip" style="background:var(--sdg11)" title="SDG 11 — Sustainable Cities">11</span>
+      <span class="sdg-chip" style="background:var(--sdg13)" title="SDG 13 — Climate Action">13</span>
+      <span class="sdg-label">UN<br>SDGs</span>
+    </div>
+
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="problem.html">Problem</a></li>
+      <li><a href="solution.html">Solution</a></li>
+      <li><a href="impact.html">Impact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section id="home-hero">
+  <!-- Floating heat particles -->
+  <span class="particle" style="width:6px;height:6px;left:12%;bottom:15%;background:rgba(255,107,53,.3);animation-duration:9s;animation-delay:0s;"></span>
+  <span class="particle" style="width:10px;height:10px;left:28%;bottom:8%;background:rgba(230,57,70,.25);animation-duration:13s;animation-delay:2s;"></span>
+  <span class="particle" style="width:5px;height:5px;left:45%;bottom:20%;background:rgba(255,209,102,.3);animation-duration:10s;animation-delay:4s;"></span>
+  <span class="particle" style="width:8px;height:8px;left:62%;bottom:5%;background:rgba(255,107,53,.2);animation-duration:12s;animation-delay:1s;"></span>
+  <span class="particle" style="width:12px;height:12px;left:78%;bottom:12%;background:rgba(230,57,70,.2);animation-duration:15s;animation-delay:3s;"></span>
+  <span class="particle" style="width:4px;height:4px;left:90%;bottom:25%;background:rgba(255,209,102,.25);animation-duration:8s;animation-delay:5s;"></span>
+
+  <div class="hero-wrap">
+    <div class="pill">Red Alert — April 2026</div>
+
+    <h1 class="hero-heading">
+      India: The World's<br>
+      <span class="hot">Heat Epicenter</span>
+    </h1>
+
+    <p class="hero-sub">
+      In April 2026, India became the global epicenter of extreme heat — with
+      <strong>95 of the top 100 hottest cities</strong> in the world located
+      within its borders, driven by a rare convergence of three atmospheric failures.
+    </p>
+
+    <div class="hero-stats-row">
+      <div class="h-stat">
+        <div class="h-stat-num" data-target="98">0</div>
+        <div class="h-stat-label">of 100 hottest cities</div>
+      </div>
+      <div class="h-stat">
+        <div class="h-stat-num" data-target="46">0</div>
+        <div class="h-stat-label">°C peak temperature</div>
+      </div>
+      <div class="h-stat">
+        <div class="h-stat-num" data-target="3">0</div>
+        <div class="h-stat-label">atmospheric failures</div>
+      </div>
+    </div>
+
+    <div class="hero-ctas">
+      <a href="problem.html" class="btn btn-fire">Understand the Crisis</a>
+      <a href="solution.html" class="btn btn-ghost">See Solutions →</a>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+  </div>
+</section>
+
+<!-- wave: dark → light -->
+<div class="wave" style="background:var(--darker);">
+  <svg viewBox="0 0 1440 55" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:55px;">
+    <path d="M0,28 C480,55 960,0 1440,28 L1440,55 L0,55 Z" fill="#F3F4F6"/>
+  </svg>
+</div>
+
+<!-- ══ QUICK FACTS ══ -->
+<section class="section" style="background:var(--light);">
+  <div class="wrap">
+    <span class="eyebrow">Quick Overview</span>
+    <h2 class="sec-title">The Crisis at a Glance</h2>
+    <p class="sec-desc">Four facts that define the scale and urgency of India's unprecedented heatwave in April 2026.</p>
+
+    <div class="facts-grid">
+      <div class="fact-card reveal">
+        <span class="fact-icon">🌡️</span>
+        <h4>Record Temperatures</h4>
+        <p>98 of the world's 100 hottest cities were Indian. Temperatures peaked between 44°C and 46°C across multiple states simultaneously.</p>
+      </div>
+      <div class="fact-card reveal">
+        <span class="fact-icon">🌆</span>
+        <h4>Urban Heat Island</h4>
+        <p>Concrete cities absorbed heat all day and radiated it at night, keeping temperatures above 30°C and trapping residents in a 24/7 "oven."</p>
+      </div>
+      <div class="fact-card reveal">
+        <span class="fact-icon">⚡</span>
+        <h4>Grid Under Pressure</h4>
+        <p>Record electricity demand for cooling pushed power grids to their limits, risking blackouts that could cut off life-saving fans and ACs.</p>
+      </div>
+      <div class="fact-card reveal">
+        <span class="fact-icon">😷</span>
+        <h4>Health Emergency</h4>
+        <p>Nighttime temperatures preventing natural cooling caused a sharp spike in heat-related illnesses, especially among the elderly and children.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- wave: light → white -->
+<div class="wave" style="background:var(--light);">
+  <svg viewBox="0 0 1440 55" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:55px;">
+    <path d="M0,28 C360,0 1080,55 1440,28 L1440,55 L0,55 Z" fill="white"/>
+  </svg>
+</div>
+
+<!-- ══ SDG GOALS ══ -->
+<section class="section" style="background:white;">
+  <div class="wrap">
+    <div class="sdg-section-header">
+      <div>
+        <span class="eyebrow">Global Goals Alignment</span>
+        <h2 class="sec-title" style="margin-bottom:0;">Aligned with UN Sustainable<br>Development Goals</h2>
+      </div>
+      <!-- SDG Wheel SVG -->
+      <div class="sdg-wheel">
+        <svg width="110" height="110" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="55" cy="55" r="54" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+          <!-- 17 segments simplified as colorful arcs -->
+          <path d="M55,55 L55,4 A51,51 0 0,1 98,28 Z" fill="#E5243B"/>
+          <path d="M55,55 L98,28 A51,51 0 0,1 104,72 Z" fill="#DDA63A"/>
+          <path d="M55,55 L104,72 A51,51 0 0,1 82,102 Z" fill="#4C9F38"/>
+          <path d="M55,55 L82,102 A51,51 0 0,1 39,106 Z" fill="#C5192D"/>
+          <path d="M55,55 L39,106 A51,51 0 0,1 8,82 Z" fill="#FF3A21"/>
+          <path d="M55,55 L8,82 A51,51 0 0,1 4,38 Z" fill="#26BDE2"/>
+          <path d="M55,55 L4,38 A51,51 0 0,1 28,10 Z" fill="#FCC30B"/>
+          <path d="M55,55 L28,10 A51,51 0 0,1 55,4 Z" fill="#A21942"/>
+          <path d="M55,55 L55,4 A51,51 0 0,0 12,28 Z" fill="#FD9D24"/>
+          <path d="M55,55 L12,28 A51,51 0 0,0 6,72 Z" fill="#DD1367"/>
+          <path d="M55,55 L6,72 A51,51 0 0,0 28,102 Z" fill="#FD6925"/>
+          <path d="M55,55 L28,102 A51,51 0 0,0 71,106 Z" fill="#BF8B2E"/>
+          <path d="M55,55 L71,106 A51,51 0 0,0 102,82 Z" fill="#3F7E44"/>
+          <path d="M55,55 L102,82 A51,51 0 0,0 106,38 Z" fill="#0A97D9"/>
+          <path d="M55,55 L106,38 A51,51 0 0,0 82,10 Z" fill="#56C02B"/>
+          <path d="M55,55 L82,10 A51,51 0 0,0 55,4 Z" fill="#00689D"/>
+          <circle cx="55" cy="55" r="22" fill="white"/>
+          <!-- UN SDG text in center -->
+          <text x="55" y="51" text-anchor="middle" font-size="7" font-weight="800" fill="#1F2937" font-family="Poppins,sans-serif">UN SDGs</text>
+          <text x="55" y="62" text-anchor="middle" font-size="6" fill="#6B7280" font-family="Poppins,sans-serif">4 · 11 · 13</text>
+        </svg>
+      </div>
+    </div>
+
+    <p class="sec-desc" style="margin-top:.5rem;">
+      This project directly addresses three United Nations Sustainable Development Goals —
+      connecting education, urban resilience, and climate action into one coordinated response.
+    </p>
+
+    <div class="sdg-grid">
+
+      <!-- SDG 4 -->
+      <div class="sdg-card reveal">
+        <div class="sdg-card-head">
+          <div class="sdg-bg-num">4</div>
+          <span class="sdg-card-icon">📚</span>
+          <div class="sdg-goal-num">SDG 4 — Quality Education</div>
+          <h3>Quality Education</h3>
+        </div>
+        <div class="sdg-card-body">
+          <p>This website educates citizens about climate-driven heat crises, empowering communities with the knowledge to protect themselves, take action, and advocate for policy change.</p>
+          <ul class="sdg-points">
+            <li><span class="sdg-check">✓</span>Climate literacy and heat-safety awareness for all</li>
+            <li><span class="sdg-check">✓</span>Data-driven education on atmospheric science</li>
+            <li><span class="sdg-check">✓</span>Accessible information for every community</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- SDG 11 -->
+      <div class="sdg-card reveal">
+        <div class="sdg-card-head">
+          <div class="sdg-bg-num">11</div>
+          <span class="sdg-card-icon">🏙️</span>
+          <div class="sdg-goal-num">SDG 11 — Sustainable Cities</div>
+          <h3>Sustainable Cities &amp; Communities</h3>
+        </div>
+        <div class="sdg-card-body">
+          <p>Our solutions directly tackle the Urban Heat Island effect by promoting cool infrastructure, green spaces, and smart city technology to make Indian cities resilient and livable.</p>
+          <ul class="sdg-points">
+            <li><span class="sdg-check">✓</span>Cool roof initiatives reducing urban heat islands</li>
+            <li><span class="sdg-check">✓</span>Blue-green spaces as natural urban cooling systems</li>
+            <li><span class="sdg-check">✓</span>AI-powered smart city heat resilience planning</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- SDG 13 -->
+      <div class="sdg-card reveal">
+        <div class="sdg-card-head">
+          <div class="sdg-bg-num">13</div>
+          <span class="sdg-card-icon">🌍</span>
+          <div class="sdg-goal-num">SDG 13 — Climate Action</div>
+          <h3>Climate Action</h3>
+        </div>
+        <div class="sdg-card-body">
+          <p>We respond to the most immediate human impact of the climate crisis — extreme heat — with both rapid interventions and long-term systemic solutions that reduce future risk.</p>
+          <ul class="sdg-points">
+            <li><span class="sdg-check">✓</span>Early-warning systems powered by AI forecasting</li>
+            <li><span class="sdg-check">✓</span>Reducing urban carbon footprint through green cover</li>
+            <li><span class="sdg-check">✓</span>Building climate-adaptive and resilient communities</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- wave: white → light -->
+<div class="wave" style="background:white;">
+  <svg viewBox="0 0 1440 55" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:55px;">
+    <path d="M0,28 C480,55 960,0 1440,28 L1440,55 L0,55 Z" fill="#F3F4F6"/>
+  </svg>
+</div>
+
+<!-- ══ EXPLORE PAGES ══ -->
+<section class="section" style="background:var(--light);">
+  <div class="wrap">
+    <span class="eyebrow">Explore the Full Story</span>
+    <h2 class="sec-title">Three Pages. One Complete Picture.</h2>
+    <p class="sec-desc">Navigate through the crisis from root cause to real-world solutions and the measurable transformation they can trigger.</p>
+
+    <div class="explore-grid">
+      <a href="problem.html" class="explore-card reveal">
+        <div class="ec-head">
+          <span class="ec-head-icon">🔥</span>
+          <h3>The Problem</h3>
+          <p>Uncover the three simultaneous atmospheric failures that created a country-wide heat trap and why India bore the full brunt.</p>
+        </div>
+        <div class="ec-foot"><span>Explore the Problem</span><span class="ec-arrow">→</span></div>
+      </a>
+
+      <a href="solution.html" class="explore-card reveal">
+        <div class="ec-head">
+          <span class="ec-head-icon">💡</span>
+          <h3>The Solution</h3>
+          <p>From AI-powered heat mapping and predictive grids to cool roofs and community green spaces — discover what can actually work.</p>
+        </div>
+        <div class="ec-foot"><span>Explore Solutions</span><span class="ec-arrow">→</span></div>
+      </a>
+
+      <a href="impact.html" class="explore-card reveal">
+        <div class="ec-head">
+          <span class="ec-head-icon">📊</span>
+          <h3>The Impact</h3>
+          <p>See the measurable, data-backed transformation these solutions trigger — from individual households to entire city ecosystems.</p>
+        </div>
+        <div class="ec-foot"><span>Explore the Impact</span><span class="ec-arrow">→</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- wave: light → darker (footer) -->
+<div class="wave" style="background:var(--light);">
+  <svg viewBox="0 0 1440 55" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:55px;">
+    <path d="M0,28 C360,0 1080,55 1440,28 L1440,55 L0,55 Z" fill="#0F0E17"/>
+  </svg>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-inner">
+    <a href="index.html" class="footer-logo">Heat<span>Crisis</span></a>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="problem.html">Problem</a></li>
+      <li><a href="solution.html">Solution</a></li>
+      <li><a href="impact.html">Impact</a></li>
+    </ul>
+    <p class="footer-copy">Built with HTML, CSS &amp; JS &nbsp;|&nbsp; <strong>India's Heat Crisis 2026</strong></p>
+  </div>
+  <div class="footer-inner" style="padding-top:0;">
+    <div class="footer-sdg">
+      <span>Aligned with UN SDGs:</span>
+      <span class="sdg-chip-sm" style="background:var(--sdg4)">4</span>
+      <span class="sdg-chip-sm" style="background:var(--sdg11)">11</span>
+      <span class="sdg-chip-sm" style="background:var(--sdg13)">13</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ══ BACK TO TOP ══ -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
